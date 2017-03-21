@@ -1,5 +1,4 @@
 import React, {Component, PropTypes} from 'react';
-import Payment from 'payment';
 import { Row, Col, FormGroup, ControlLabel} from 'react-bootstrap';
 
 class ShippingDetails extends Component{
@@ -7,7 +6,6 @@ class ShippingDetails extends Component{
   	super();
   	this._renderError =this._renderError.bind(this);
     this._renderSuccess = this._renderSuccess.bind(this);
-    this.componentDidMount = this.componentDidMount(this);
   	this.state = { 
   		fullName:'',
   		email:'',
@@ -59,16 +57,6 @@ class ShippingDetails extends Component{
   	 this.setState({errorMessage: false});
   	 return true;
     }
-  }
-
-  componentDidMount() {
-    const { number, expiration, cvc } = this.refs;
-    if(number !== undefined)
-    Payment.formatCardNumber(number);
-   if(expiration !== undefined)
-    Payment.formatCardExpiry(expiration);
-  if(cvc !== undefined)
-    Payment.formatCardCVC(cvc);
   }
 
   render() {
