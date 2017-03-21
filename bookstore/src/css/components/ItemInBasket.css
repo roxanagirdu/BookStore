@@ -1,0 +1,6 @@
+
+.itemBox {
+    display: flex;
+    justify-content: space-between;
+    padding: .4em 0;
+}

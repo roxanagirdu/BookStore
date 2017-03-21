@@ -1,0 +1,11 @@
+.addCartBtn {
+	margin-top: 50px;
+}
+p {
+	 margin-bottom: 20em;
+    border-radius: 2px;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

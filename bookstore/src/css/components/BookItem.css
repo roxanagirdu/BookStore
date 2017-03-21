@@ -1,0 +1,21 @@
+@import '../shared/variables.css';
+
+.itemContainer {
+    margin-bottom: 1em;
+    border-radius: 2px;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: solid;
+    border-width: 1px;
+}
+
+.bookName {
+    margin-right: .5em;
+}
+
+.price {
+    padding-left: .5em;
+    font-size: 1.3rem;
+}

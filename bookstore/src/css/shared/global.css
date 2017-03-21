@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Global
+   ========================================================================== */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: var(--white);
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+button {
+    cursor:pointer;
+    border:0;
+    -webkit-appearance:none;
+    outline:0;
+    padding:0;
+    box-shadow:none;
+    user-select:none;
+    text-decoration:none;
+    font-style:normal;
+    color:inherit;
+    background-color: transparent;
+}
