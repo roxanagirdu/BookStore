@@ -8,11 +8,6 @@ const BooksList =({booksList, addToCart})=> {
 	return (
 		<div className="container">
                 <div>
-                    <p>
-                        <h2>
-                            Let's buy some books!
-                        </h2>
-                    </p>
                     <div>
                         {booksList.map(({id,name, author, price}) => (
                         	<div key={id}>

@@ -26,7 +26,7 @@ class  App extends Component  {
 
   addToCart(event) {
      this.state.books.map((item) => {
-            if (event.target.id === item.id) {
+            if (event.target.id === (item.id).toString()) {
                 const { selectedBooks } = this.state;
                 selectedBooks[item.id] = selectedBooks[item.id] + 1 || 1;
                 this.setState({
